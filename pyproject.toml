@@ -7,3 +7,56 @@ requires-python = ">=3.14"
 dependencies = [
     "fastapi[standard]>=0.136.1",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.14",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint]
+extend-select = [
+  "UP",
+  "E",
+  "W",
+  "I",
+  "C90",
+  "N",
+  "ANN",
+  "ASYNC",
+  "BLE",
+  "FBT",
+  "B",
+  "A",
+  "C4",
+  "DTZ",
+  "T10",
+  "FA",
+  "ISC",
+  "ICN",
+  "INP",
+  "PIE",
+  "T20",
+  "PYI",
+  "Q",
+  "RET",
+  "SLF",
+  "SIM",
+  "TID",
+  "TCH",
+  "ARG",
+  "TD",
+  "FIX",
+  "ERA",
+  "PL",
+  "RUF",
+]
+ignore = [
+  "ISC001"
+]
+
