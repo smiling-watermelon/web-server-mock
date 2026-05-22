@@ -4,6 +4,7 @@
 		"context": "..",
 		"dockerfile": "Dockerfile"
 	},
+	"postAttachCommand": "uv sync",
 	"customizations": {
 		"vscode": {
 			"extensions": [
